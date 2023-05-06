@@ -12,10 +12,8 @@ datasource db {
   relationMode = "prisma"
 }
 
-model Inquiry {
+model RestaurantStore {
 id      Int   @default(autoincrement()) @id
-name    String
-email   String
-subject String?
-message String
+restaurantName    String
+note String?
 }

@@ -1,13 +1,32 @@
 # Web application
 
-## Get started
+## Pre-requisites
 
 - install planetscale cli
   - `brew install planetscale/tap/pscale`
-  - access tokens storage: `~/.config/planetscale/access-token`
+- install mysql client
+  - `brew install mysql-client`
+
+## Get started
+
+- run local server
+  - `pnpm run db`
+- run local web server
+  - `pnpm run dev`
+- to view db, run `pnpm run view:db`
 
 ## planetscale
 
 - login `pscale auth login`
 - run db locally `pnpm run db`
 - create a branch `pscale branch create food-alert-api <BRANCH_NAME>`
+- sync prisma.schema with PlanetScale schema via `pnpm run sync:schema`
+- To verify that the database is in sync with the prisma schema, run mysql playground via `pscale shell food-alert-api dev`
+  - Then run `describe <MODAL_NAME>;`
+  - run `exit` to leave
+- To promote a branch to production once in sync, run `pscale branch promote food-alert-api main`
+
+## reference
+
+- [PlanetScale Docs](https://planetscale.com/blog/how-to-setup-next-js-with-prisma-and-planetscale)
+- [Youtube Video](https://www.youtube.com/watch?v=JtqdAn_wYzY)

@@ -10,7 +10,6 @@
     "init": "corepack enable && corepack prepare pnpm@latest --activate && pnpm run bootstrap",
     "lint": "turbo run lint --parallel",
     "lint:ci": "pnpm run lint",
-    "prepare": "husky install",
     "sync": "syncpack format && syncpack list-mismatches",
     "sync:fix": "syncpack fix-mismatches"
   },
