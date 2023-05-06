@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    name: Linting
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    - name: Get node version
+      run: |
+          echo "PROJECT_NODE_VERSION=$(cat $GITHUB_WORKSPACE/.nvmrc)" >> $GITHUB_ENV
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ env.PROJECT_NODE_VERSION }}
+        
+    - uses: pnpm/action-setup@v2
+      name: Install pnpm
+      id: pnpm-install
+      
+    - name: Install dependencies
+      run: pnpm install
+      
+    - name: Run CI
+      run: pnpm run lint:ci
+
+
