@@ -18,5 +18,13 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     }
+    // add prisma.prisma extension
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+      "prisma.prisma"
+    ]
   }
 }

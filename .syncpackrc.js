@@ -30,11 +30,18 @@ module.exports = {
       pinVersion: 'workspace:*',
     },
     {
-      label: 'shared deps',
+      label: 'typescript',
       packages: ['**'],
       dependencies: ['typescript'],
       dependencyTypes: ['dev'],
       pinVersion: '4.9.5',
+    },
+    {
+      label: 'eslint',
+      packages: ['**'],
+      dependencies: ['eslint'],
+      dependencyTypes: ['dev'],
+      pinVersion: '^8.38.0',
     },
   ],
 
