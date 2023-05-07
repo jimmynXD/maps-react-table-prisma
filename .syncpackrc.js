@@ -43,6 +43,13 @@ module.exports = {
       dependencyTypes: ['dev'],
       pinVersion: '^8.38.0',
     },
+    {
+      label: 'types/node',
+      packages: ['**'],
+      dependencies: ['@types/node'],
+      dependencyTypes: ['dev'],
+      pinVersion: '^18',
+    },
   ],
 
   // sort packages inside each of these sections

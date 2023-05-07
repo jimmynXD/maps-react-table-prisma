@@ -15,17 +15,6 @@ export function Form() {
   const inputCls = 'border border-gray-700 rounded'
   const inputLabel = clsx('text-gray-700 text-sm')
 
-  //   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
-  //     e.preventDefault()
-  //     console.log('submit', { restName, note })
-  //   }
-  interface Inquiry {
-    firstName: string
-    email: string
-    subject: string
-    message: string
-  }
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     const body: RestProps = { restaurantName: restName, note }

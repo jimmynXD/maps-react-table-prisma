@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Header } from 'ui-local'
 
 export interface PageLayoutProps {
   title?: string

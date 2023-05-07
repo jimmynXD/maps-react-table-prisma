@@ -10,10 +10,10 @@
 ## Get started
 
 - run local server
-  - `pnpm run db`
+  - `pnpm run start:db`
 - run local web server
-  - `pnpm run dev`
-- to view db, run `pnpm run view:db`
+  - `pnpm run start:web`
+- to view db, run `pnpm run start:studio`
 
 ## planetscale
 

@@ -6,10 +6,11 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 }
 
 export function Input(props: InputProps) {
+  const { icon, parentClassName, ...rest } = props
   return (
     <div
       className={clsx(
-        props.parentClassName,
+        parentClassName,
         'relative',
         'group',
         'bg-white rounded',
@@ -24,13 +25,13 @@ export function Input(props: InputProps) {
           'text-gray-500 group-focus-within:text-black font-sm'
         )}
       >
-        {props.icon ?? 'search'}
+        {icon ?? 'search'}
       </span>
       <input
         className={clsx('w-full pl-8 pr-2 py-2', 'bg-transparent')}
         type="search"
         placeholder="search..."
-        {...props}
+        {...rest}
       />
     </div>
   )
