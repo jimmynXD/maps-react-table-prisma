@@ -1,5 +1,12 @@
 {
   "extends": "tsconfig-local/react-library.json",
+  "compilerOptions": {
+    "lib": ["es6", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./components/*"]
+    }
+  },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["dist", "build", "node_modules"]
 }

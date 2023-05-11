@@ -34,14 +34,14 @@ module.exports = {
       packages: ['**'],
       dependencies: ['typescript'],
       dependencyTypes: ['dev'],
-      pinVersion: '4.9.5',
+      pinVersion: '^5.0.4',
     },
     {
       label: 'eslint',
       packages: ['**'],
       dependencies: ['eslint'],
       dependencyTypes: ['dev'],
-      pinVersion: '^8.38.0',
+      pinVersion: '^8.40.0',
     },
     {
       label: 'types/node',

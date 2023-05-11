@@ -14,16 +14,17 @@
     "sync:fix": "syncpack fix-mismatches"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.22.0",
-    "eslint": "^8.38.0",
+    "@changesets/cli": "^2.26.1",
+    "eslint": "^8.40.0",
     "eslint-config-local": "workspace:*",
-    "git-commit-msg-linter": "4.11.0",
+    "git-commit-msg-linter": "5.0.4",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^13.2.2",
     "prettier": "^2.8.8",
     "prettier-config-local": "workspace:*",
-    "syncpack": "^9.8.4",
-    "turbo": "latest"
+    "syncpack": "^9.8.6",
+    "tsconfig-local": "workspace:*",
+    "turbo": "^1.9.3"
   },
   "eslintConfig": {
     "root": true,

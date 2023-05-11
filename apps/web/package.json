@@ -6,11 +6,11 @@
     "build": "next build",
     "dev": "concurrently \"pnpm run dev:db\" \"pnpm run dev:web\" \"pnpm run dev:studio\"",
     "dev:db": "pscale connect food-alert-api main --port 3309",
-    "dev:web": "sleep 5 && next dev",
     "dev:studio": "sleep 5 && prisma studio",
+    "dev:web": "sleep 5 && next dev",
     "lint": "next lint",
-    "sync:schema": "prisma db push",
-    "start": "next start"
+    "start": "next start",
+    "sync:schema": "prisma db push"
   },
   "dependencies": {
     "@prisma/client": "4.13.0",
@@ -33,7 +33,7 @@
     "tailwind-local": "workspace:*",
     "tailwindcss": "^3.3.2",
     "tsconfig-local": "workspace:*",
-    "typescript": "4.9.5"
+    "typescript": "^5.0.4"
   },
   "eslintConfig": {
     "root": true,
