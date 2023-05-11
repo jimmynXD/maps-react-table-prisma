@@ -14,10 +14,12 @@
   },
   "dependencies": {
     "@prisma/client": "4.13.0",
+    "@react-google-maps/api": "^2.18.1",
     "next": "13.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ui-local": "workspace:*"
+    "ui-local": "workspace:*",
+    "use-places-autocomplete": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^18",

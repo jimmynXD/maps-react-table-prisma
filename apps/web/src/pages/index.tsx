@@ -1,1 +1,1 @@
-export { Form as default } from '@/search'
+export { MapPage as default } from '@/map'

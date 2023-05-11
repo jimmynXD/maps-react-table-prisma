@@ -5,7 +5,7 @@
       "env": ["DATABASE_URL"]
     },
     "location-api#dev": {
-      "env": ["DATABASE_URL"]
+      "env": ["DATABASE_URL", "GOOGLE_MAPS_API_KEY"]
     },
     "build": {
       "outputs": [".next/**", "dist/**", "storybook-static/**"],
