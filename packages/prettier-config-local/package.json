@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "UNLICENSED",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "config",
     "mskcc",

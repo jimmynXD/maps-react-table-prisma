@@ -70,6 +70,7 @@ module.exports = {
     'author',
     'license',
     'main',
+    'modules',
     'types',
     'module',
     'files',
