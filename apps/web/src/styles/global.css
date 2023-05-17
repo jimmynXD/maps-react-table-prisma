@@ -1,1 +1,5 @@
 @import 'tailwind-local/styles';
+
+.material-symbols-rounded.fill {
+  font-variation-settings: 'FILL' 1;
+}
