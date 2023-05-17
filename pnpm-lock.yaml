@@ -52,6 +52,9 @@ importers:
       react:
         specifier: ^18.2.0
         version: 18.2.0
+      react-cool-onclickoutside:
+        specifier: ^1.7.0
+        version: 1.7.0(react@18.2.0)
       react-dom:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
@@ -5881,6 +5884,14 @@ packages:
       '@react-types/shared': 3.18.0(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
+  /react-cool-onclickoutside@1.7.0(react@18.2.0):
+    resolution: {integrity: sha512-HVZK2155Unee+enpoHKyYP2UdQK69thw90XAOUCjvJBcgRSgfRPgWWt/W1dYzoGp3+nleAa8SJxF1d4FMA4Qmw==}
+    peerDependencies:
+      react: '>= 16.8.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-dom@18.2.0(react@18.2.0):
